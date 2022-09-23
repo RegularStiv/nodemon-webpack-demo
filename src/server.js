@@ -1,3 +1,5 @@
+console.log("kjshdfksdkd");
+
 const http = require('http');
 const url = require('url');
 const query = require('querystring');
@@ -11,6 +13,7 @@ const urlStruct = {
   '/style.css': htmlHandler.getCSS,
   '/success': jsonHandler.success,
   '/badRequest': jsonHandler.badRequest,
+  '/bundle.js': htmlHandler.getBundle,
   notFound: jsonHandler.notFound,
 };
 
